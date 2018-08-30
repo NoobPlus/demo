@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>贡创财富开发中</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive styles-->
+    <!--<link rel="stylesheet" href="css/responsive.css">-->
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<section>
+    <div class="wrap about_page" id="wrap">
+        <div class="wrapper">
+            <div class="header">
+                <div class="head">
+
+                    <div class="nav_box">
+                        <ul class="nav_list" id="nav_list">
+                            <li><a href="javascript:void(0);" onclick="play()" id="playbtn" class="btn_sound"></a></li>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="about.html">信息披露</a></li>
+                        </ul>
+                        <span class="ic_line" id="h_line"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="events_sec" id="events_sec">
+                <div class="content">
+                    <h3 class="tt_bg">贡创财富</h3>
+                    <h3 class="tt_bg">2018年5月份月报</h3>
+                    <div class="events_list">
+                        <span class="ic_time png"></span>
+                        <ul>
+                            <li class="right_li">
+                                <span class="ic_events png"></span>
+                                <p class="txt_events"><strong>活动收益256487元</strong></p>
+                            </li>
+                            <li class="left_li">
+                                <span class="ic_events"><i class="png"></i></span>
+                                <p class="txt_events"><strong>投资收益18175元</strong></p>
+                            </li>
+                            <li class="right_li">
+                                <span class="ic_events png"></span>
+                                <p class="txt_events"><strong>总收益15468元</strong></p>
+                            </li>
+                            <li class="left_li">
+                                <span class="ic_events"><i class="png"></i></span>
+                                <p class="txt_events"><strong>新注册用户数2人</strong></p>
+                            </li>
+                            <li class="right_li">
+                                <span class="ic_events png"></span>
+                                <p class="txt_events"><strong>综合年华收益率8.3%</strong></p>
+                            </li>
+                            <li class="left_li">
+                                <span class="ic_events"><i class="png"></i></span>
+                                <p class="txt_events"><strong>成交总额1542476元</strong></p>
+                            </li>
+                            <li class="right_li">
+                                <span class="ic_events png"></span>
+                                <p class="txt_events"><strong>上线天数114天</strong></p>
+                            </li>
+                            <li class="left_li">
+                                <span class="ic_events"><i class="png"></i></span>
+                                <p class="txt_events"><strong>累计注册人数61人</strong></p>
+                            </li>
+                        </ul>
+                        <span class="ic_arr png"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audios" controls="true" autoplay="autoplay" class="audio" style="display:none;"></audio>
+    <script>
+        var url=["www.ytmp3.cn/down/44077.mp3","www.ytmp3.cn/down/38649.mp3"];
+        var num = GetRandomNum(0,url.length-1);
+        document.getElementById("audios").src="http://"+url[num];
+        function GetRandomNum(Min,Max)
+        {
+            var Range = Max - Min;
+            var Rand = Math.random();
+            return(Min + Math.round(Rand * Range));
+        }
+
+        function play(){
+            var div = document.getElementById('playbtn');
+            var obj=document.getElementById("audios");
+            if(obj.paused){
+                obj.play();
+                div.setAttribute("class", "btn_sound");
+            }else{
+                obj.pause();
+                div.setAttribute("class", "btn_sound btn_no_sound");
+            }
+
+        }
+    </script>
+</section>
+
+<!-- Back To Top Button -->
+<div id="back-top">
+    <a href="#" class="page-scroll btn btn-primary" ><i class="icon-rocket"></i></a>
+</div>
+<!-- End Back To Top Button -->
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script src="js/canvas-nest.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+
+</body>
+</html>
