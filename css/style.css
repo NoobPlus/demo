@@ -235,17 +235,24 @@ hr{
 /*Slider
 =============================================================*/
 .slider-pl{
-    background: url("../images/bg.png") no-repeat 0 0;
+    background: url("../images/bg.jpg") no-repeat 0 0;
     background-size: cover;
     min-height: 400px;
     overflow: hidden;
     position: relative;
 }
 .slider-gg{
-    background: url("../images/bg-gg.png") no-repeat 0 0;
+    background: url("../images/bg-gg.jpg") no-repeat 0 0;
     background-size: cover;
     min-height: 400px;
     overflow: hidden;
+}
+.slider-ed{
+    background: url("../images/bg-gg.jpg") no-repeat 0 0;
+    background-size: cover;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
 }
 
 .slider .slider-wrap p{
