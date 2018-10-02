@@ -99,7 +99,7 @@ hr{
     content:"\e899";
 }
 .icon-purpose:before{
-    content: "\e95b";
+    content: "\e892";
 }
 .icon-calendar:before{
     content: "\e898";
@@ -117,19 +117,19 @@ hr{
     content: "\e914";
 }
 .icon-pt:before{
-    content: "\e99c";
+    content: "\e891";
 }
 .icon-xx:before{
     content: "\e896";
 }
 .icon-bx:before{
-    content: "\e99f";
+    content: "\e894";
 }
 .icon-fx:before{
-    content: "\e99e";
+    content: "\895";
 }
 .icon-zj:before{
-    content: "\e9a0";
+    content: "\e893";
 }
 /*header
 =============================================================*/
