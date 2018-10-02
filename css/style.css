@@ -96,16 +96,16 @@ hr{
     content:"\e946";
 }
 .icon-gccaifu:before{
-    content:"\e99b";
+    content:"\e899";
 }
 .icon-purpose:before{
     content: "\e95b";
 }
 .icon-calendar:before{
-    content: "\e976";
+    content: "\e898";
 }
 .icon-requirement:before{
-    content: "\e97e";
+    content: "\e897";
 }
 .icon-security:before{
     content: "\e919";
@@ -120,7 +120,7 @@ hr{
     content: "\e99c";
 }
 .icon-xx:before{
-    content: "\e99d";
+    content: "\e896";
 }
 .icon-bx:before{
     content: "\e99f";
